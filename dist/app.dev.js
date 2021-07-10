@@ -17,8 +17,8 @@ function newItemsAdded() {
   var t = document.createTextNode(inputValue);
   li.appendChild(t);
 
-  if (inputValue === " ") {
-    alert("enter item");
+  if (inputValue === "") {
+    alert("Enter your shopping items");
   } else {
     document.getElementById("myul").appendChild(li);
   }
