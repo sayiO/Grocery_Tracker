@@ -1,0 +1,21 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.heading {
+    padding: 30px;
+    text-align: center;
+    background-color: aqua;
+    margin-top: 50px;
+}
+
+.heading h1 {
+    margin-bottom: 10px;
+}
