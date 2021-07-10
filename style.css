@@ -53,3 +53,29 @@ input {
     color: black;
     box-shadow: 2px 2px 4px black;
 }
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    position: relative;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+ul li:nth-child(even) {
+    background-color: lightgreen;
+}
+
+ul li:hover {
+    background-color: darkgreen;
+    color: white;
+}
+
+ul li.done {
+    background-color: rgb(241, 41, 41);
+    color: white;
+    text-decoration: line-through;
+}
