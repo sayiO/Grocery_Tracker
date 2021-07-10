@@ -10,10 +10,9 @@ for (i = 0; i < myListItems.length; i++) {
 
 function newItemsAdded() {
     var li = document.createElement("li");
-    var inputValue = document.getElementById("myList")
-    value;
+    var inputValue = document.getElementById("myList");
     var t = document.createTextNode(inputValue);
-    list.append(t);
+    li.appendChild(t);
     if (inputValue === " ") {
         alert("enter item");
     } else {
