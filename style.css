@@ -75,7 +75,20 @@ ul li:hover {
 }
 
 ul li.done {
-    background-color: rgb(241, 41, 41);
+    background-color: rgb(247, 186, 186);
     color: white;
     text-decoration: line-through;
+}
+
+.close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+.close:hover {
+    background-color: red;
+    color: white;
 }
