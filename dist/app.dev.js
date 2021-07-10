@@ -13,7 +13,7 @@ for (i = 0; i < myListItems.length; i++) {
 
 function newItemsAdded() {
   var li = document.createElement("li");
-  var inputValue = document.getElementById("myList");
+  var inputValue = document.getElementById("myList").value;
   var t = document.createTextNode(inputValue);
   li.appendChild(t);
 
@@ -33,7 +33,24 @@ function newItemsAdded() {
   for (i = 0; i < close.length; i++) {
     close[i].onclick = function () {
       var div = this.parentElement;
-      dic.style.display = "none";
+      div.style.display = "none";
     };
   }
 }
+
+var close = document.getElementsByClassName("close");
+var i;
+
+for (i = 0; i < close.length; i++) {
+  close[i].onclick = function () {
+    var div = this.parentElement;
+    div.style.display = "none";
+  };
+}
+
+var list = document.querySelector('ul');
+list.addEventListener('click', function (ev) {
+  if (ev.target.tagName === 'LI') {
+    ev.target.classList.toggle('done');
+  }
+});
